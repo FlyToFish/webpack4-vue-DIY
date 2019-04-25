@@ -4,8 +4,8 @@ const { VueLoaderPlugin } = require('vue-loader');
 const path = require('path');
 const webpack = require('webpack');
 const projectConfig = require('./project.config')
-module.exports = {
-  mode: "production",
+module.exports = env => ({
+  mode: env.production ? 'production' : 'development',
   entry: {
     app: "./src/index.js",
   },
@@ -43,4 +43,4 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/'
   }
-};
+}); 

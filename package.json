@@ -5,8 +5,8 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "start": "webpack-dev-server --open --hot --config webpack.config.js",
-    "build": "webpack",
+    "start": "webpack-dev-server --progress --profile --open --hot --config webpack.config.js --env.production",
+    "build": "webpack --progress --profile",
     "server": "node server.js"
   },
   "repository": {
@@ -29,8 +29,6 @@
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^0.23.1",
     "uglifyjs-webpack-plugin": "^2.1.2",
-    "vue-loader": "^15.7.0",
-    "vue-template-compiler": "^2.6.10",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.3.1",
     "webpack-dev-middleware": "^3.6.2",
@@ -38,7 +36,6 @@
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
-    "lodash": "^4.17.11",
-    "vue": "^2.6.10"
+    "lodash": "^4.17.11"
   }
 }
