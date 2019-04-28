@@ -5,8 +5,8 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "start": "webpack-dev-server --progress --profile --open --hot --config webpack.config.js --env.production",
-    "build": "webpack --progress --profile",
+    "start": "webpack-dev-server --open --hot --config webpack.config.js --env.production",
+    "build": "webpack --env.production",
     "server": "node server.js"
   },
   "repository": {

@@ -39,7 +39,7 @@ module.exports = env => ({
     new CleanWebpackPlugin(),
   ],
   output: {
-    filename: '[name].bundle.js',
+    filename: '_.[hash].js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/'
   }
